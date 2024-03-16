@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
-    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build vite build",
-    "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test"
+    "build": "vite build",
+    "homepage": "https://asif-shaikh-github.github.io/LotteryGameReact",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,6 +23,7 @@
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "vite": "^5.1.6"
   }
 }
